@@ -1,0 +1,417 @@
+
+.CreateAccount_header
+{
+    height: 90px;
+    max-width: 100%;
+    border-bottom: solid 1px rgb(228, 228, 228);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    overflow: hidden;
+}
+.inner_header
+{
+    height: 80px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.CreateAccount_logo
+{
+    fill: rgb(229, 9, 20);
+    height: 45px;
+}
+.inner_header > p
+{
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+    letter-spacing: 1px;
+}
+.inner_header > p:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.createAccount_Steps
+{
+    padding: 170px 0;
+    height: auto;
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(51, 51, 51);
+}
+.Step1
+{
+    transform: translateX(-500px);
+    opacity: 0;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .5s;
+    pointer-events: none;
+}
+.Step1.active
+{
+    transform: translateX(0);
+    pointer-events: all;
+    opacity: 1;
+}
+.Step1_bgImg
+{
+    height: 60px;
+    width: 400px;
+    background-image: url('https://assets.nflxext.com/ffe/siteui/acquisition/simplicity/Devices.png');
+    /* background: url('https://assets.nflxext.com/ffe/siteui/acquisition/simplicity/Devices.png') no-repeat 50% 50%; */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.setting_up_guide
+{
+    text-align: center;
+    margin-top: 20px;
+}
+.steps
+{
+    font-size: 12px;
+}
+.setting_up_guide > h1{
+    margin-top: 10px;
+}
+.setting_up_guide  p{
+    margin-top: 15px;
+    font-size: 18px;
+    padding-inline: 50px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+.Step1_btn
+{
+    height: 65px;
+    background-color: rgb(229, 9, 20);
+    color: white;
+    width: 350px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+/* Step2 */
+.Step2
+{
+    position: absolute;
+    opacity: 0;
+    transform: translateX(400px);
+    transition: .5s;
+    pointer-events: none;
+    width: 450px;
+}
+.Step2.active
+{
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: all;
+}
+.Step2.done
+{
+    opacity: 0;
+    transform: translateX(-400px);
+    pointer-events: none;
+}
+.Step2 > h1
+{
+    margin: 10px 0;
+}
+.Step2 > p
+{
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+.step2_input
+{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+}
+.step2_input > input
+{
+    padding-left: 20px;
+    height: 55px;
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.Step2_btn
+{
+    height: 65px;
+    background-color: rgb(229, 9, 20);
+    color: white;
+    width: 450px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+/* Step3 */
+
+.Step3
+{
+    transform: translateX(400px);
+    opacity: 0;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    position: absolute;
+    height: auto;
+    width: 300px;
+    transition: .5s;
+}
+.Step3.active
+{
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: all;
+}
+.Step3.done
+{
+    transform: translateX(-400px);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.Step3_bgImg
+{
+    margin-bottom: 20px;
+    height: 60px;
+    width: 60px;
+    background-size: contain;
+    background-image: url('https://assets.nflxext.com/ffe/siteui/acquisition/simplicity/Checkmark.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.Step3_guide
+{
+    margin-top: 20px;
+    display: flex;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+#tick_svg 
+{
+    color: rgb(229, 9, 20);
+    margin-right: 10px;
+}
+.Step3_btn
+{
+    height: 65px;
+    background-color: rgb(229, 9, 20);
+    color: white;
+    width: 300px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+.CreateAccount_Footer
+{
+    height: 150px;
+    max-width: 100%;
+    border-top: solid 1px rgb(228, 228, 228);
+    background-color: whitesmoke;
+    color: grey;
+    padding: 20px 60px;
+}
+.CreateAccount_Footer > p
+{
+    margin-top: 20px;
+}
+.CreateAccount_Footer > p > span
+{
+    margin-right: 150px;
+    font-size: 12px;
+}
+.CreateAccount_Footer > p > span:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#uni
+{
+    margin-left: -82px;
+}
+
+
+
+/* Netflix_plans */
+.Netflix_plans
+{
+    height: auto;
+    opacity: 0;
+    position: absolute;
+    width: 80%;
+    transition: .5s .5s;
+    pointer-events: none;
+    transform: translateX(100px);
+    overflow: hidden;
+}
+.Netflix_plans.active
+{
+    transform: translateX(0);
+    pointer-events: all;
+    opacity: 1;
+}
+
+.Netflix_plans_guide
+{
+    margin-top: 10px;
+    display: flex;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+
+.Netflix_plans_table .row1
+{
+    display: grid;
+    /* border: solid 1px red; */
+    /* gap: 1rem; */
+    grid-template-columns: repeat(7, 1fr);
+}
+.Netflix_plans_table .row1 > div
+{
+    /* border-bottom: solid 1px rgb(228, 228, 228); */
+    height: 150px;
+}
+
+
+.Netflix_plans_table .row2
+{
+    display: grid;
+    /* border: solid 1px red; */
+    /* gap: 1rem; */
+    grid-template-columns: repeat(7, 1fr);
+}
+.Netflix_plans_table .row2 > div
+{
+    border-bottom: solid 1px rgb(228, 228, 228);
+    color: grey;
+    height: 50px;
+}
+.Netflix_plans_table .row2 > div.active
+{
+    color: rgb(229, 9, 20);
+}
+.col2.active
+{
+    color: rgb(229, 9, 20);
+}
+.col3.active
+{
+    color: rgb(229, 9, 20);
+}
+.col4.active
+{
+    color: rgb(229, 9, 20);
+}
+.col5.active
+{
+    color: rgb(229, 9, 20);
+}
+
+.Netflix_plans_table .row3
+{
+    display: grid;
+    /* border: solid 1px red; */
+    grid-template-columns: repeat(7, 1fr);
+}
+.Netflix_plans_table .row3 > .col1
+{
+    height: 50px;
+}
+.Netflix_plans_table .row3 > .col
+{
+    margin-top: 15px;
+    /* color: rgb(229, 9, 20); */
+    color: grey;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 50px;
+    font-size: 14px;
+}
+.Netflix_plans_table .row3 > .col.active
+{
+    color: rgb(229, 9, 20);
+}
+
+
+.col1
+{
+    align-items: center;
+    grid-column: span 3 / auto;
+    display: flex;
+    padding-left:20px;
+    font-size: 17px;
+}
+.plan_type
+{
+    height: 120px;
+    width: 120px;
+    background-color: rgb(229, 9, 20);
+    opacity: .7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+}
+.plan_type.active
+{
+    opacity: 1;
+}
+.col2, .col3, .col4, .col5
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Netflix_plans_more_info
+{
+    margin-top: 30px;
+    padding-right: 200px;
+    font-size: 12px;
+    color: grey;
+}
+.final_Btn
+{
+    width: 450px;
+    height: 70px;
+    background-color: rgb(229, 9, 20);
+    color: white;
+    font-size: 22px;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+}

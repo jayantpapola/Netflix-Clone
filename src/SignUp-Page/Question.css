@@ -1,0 +1,52 @@
+.Questions
+{
+    padding: 50px 100px;
+    background-color: black;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.Questions > h1
+{
+    font-size: 50px;
+    color: white;
+    margin-bottom: 50px;
+}
+.input_field2
+{
+    height: 60px;
+    margin-top: 20px;
+}
+.input_field2 > input
+{
+    
+    font-size: 25px;
+    padding: 16px;
+    outline: none;
+    width: 400px;
+    border-right: none;
+} 
+.input_field2  button
+{
+    transform: translateY(1px);
+    padding: 16px 10px;
+    outline: none;
+    width: 150px;
+    border: none;
+    outline: none;
+    background-color: rgb(229, 9, 20);
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+} 
+.input_field2 > button >i
+{
+    margin-left: 30px;
+}
+.subscription_line
+{
+    margin-top: 50px;
+    font-size: 20px;
+    color: white;
+}

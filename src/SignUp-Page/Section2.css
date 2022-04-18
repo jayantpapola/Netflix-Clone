@@ -1,0 +1,83 @@
+.Section2
+{
+    padding: 50px 100px;
+    margin-top: 10px;
+    height: auto;
+    max-width: 100%;
+    background-color: black;
+    display: flex;
+    overflow: hidden;
+}
+.right_section2
+{
+    height: 400px;
+    height: auto;
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    text-align: left;
+}
+.right_section2 > h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+.right_section2 > p{
+    font-size: 26px;
+    padding-inline: 50px;
+    width: 100%;
+}
+.Downloading_animtion.none
+{
+    display: none;
+}
+.left_section2
+{
+    height: 400px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.left_section2 > img
+{
+    position: absolute;
+    max-height: 400px;
+    object-fit: contain;
+}
+.Downloading_animtion
+{
+    transform: translateY(120px);
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    width: 320px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: black;
+    border: solid 2px #333;
+    box-shadow: 0 0 10px black,
+    0 0 20px rgba(51, 51, 51, 0.5);
+}
+.poster
+{
+    max-height: 70px;
+}
+.text > p
+{
+    font-size: 14px;
+    color: royalblue;
+}
+.animation
+{
+    height: 60px;
+    width: 60px;
+    object-fit: contain;
+}

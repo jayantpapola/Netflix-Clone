@@ -1,0 +1,61 @@
+.SignUpFooter
+{
+    padding: 50px 200px;
+    background-color: black;
+    margin-top: 10px;
+    color: grey;
+    max-width: 100%;
+}
+.SignUpFooter > p 
+{
+    max-width: 100%;
+}
+.footer
+{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    
+}
+ul
+{
+    padding: 0;
+    list-style-type: none;
+}
+.foot li
+{
+    font-size: 13px;
+    margin-top: 12px;
+}
+.lang_btn
+{
+    margin-top: 20px;
+    padding: 5px;
+    background-color: transparent;
+    border: solid 1px grey;
+    color: white;
+    cursor: pointer;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lang_btn > i
+{
+    margin: 10px;
+}
+.lang_btn:focus
+{
+    box-shadow: 0 0 0 1.5px white ;
+}
+.down
+{
+    transform: translateY(40px);
+}
+#netflix_india
+{
+    margin-top: 20px;
+    font-size: 12px;
+}
