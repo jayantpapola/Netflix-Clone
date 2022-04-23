@@ -1,0 +1,151 @@
+.NetflixNavbar
+{
+    z-index: 99999;
+    position: fixed;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #111; */
+    transition: .5s;
+}
+.NetflixNavbar_logo
+{
+    margin-left: 20px;
+    fill: rgb(229, 9, 20);
+    max-height: 30px;
+}
+
+
+.navigations
+{
+    width: 75%;
+    /* border: solid 1px red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_items
+{
+    display: flex;
+}
+.nav_items > li{
+    padding-inline: 15px;
+    font-size: 14px;
+    /* font-weight: 600; */
+    cursor: pointer;
+}
+.nav_items > li:hover
+{
+    color: rgb(229, 9, 20);
+}
+
+.searchBar
+{
+    height: 40px;
+    display: flex;
+    justify-content: right;
+    border-radius: 100px;
+    align-items: center;
+    background-color: transparent;
+    padding-inline: 10px;
+    overflow: hidden;
+    color: #fff;
+    width: 20px;
+    transition: .4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+}
+.searchBar > input
+{
+    outline: none;
+    border-radius: 100px;
+    height: 40px;
+    width: 240px;
+    border: none;
+    background-color: transparent;
+    color: #111;
+    padding-left: 20px;
+    letter-spacing: .5px;
+}
+.searchBar > i
+{
+    padding-inline: 3px;
+    cursor: pointer;
+}
+.searchBar.show
+{
+    width: 250px;
+    background-color: white;
+    color: #111;
+}
+
+.Netflix_Account
+{
+    display: flex;
+    align-items: center;
+}
+.Netflix_Account > i 
+{
+    cursor: pointer;
+}
+.Netflix_Account > img 
+{
+    cursor: pointer;
+    margin-left: 30px;
+    margin-right: 20px;
+    max-height: 40px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+.Netflix_Account_dropdown.show
+{
+    display: flex;
+}
+
+.Netflix_Account_dropdown
+{
+    display: none;
+    position: absolute;
+    /* display: flex; */
+    flex-direction: column;
+    /* align-items: center; */
+    height: auto;
+    width: 180px;
+    background-color: rgba(0, 0, 0, 0.9);
+    font-size: 12px;
+    transform: translate(-90px,120px);
+}
+#sec1, #sec2
+{
+    width: 150px;
+    border-bottom: solid .1px whitesmoke;
+}
+#sec3
+{
+    text-align: center;
+    font-size: 12px;
+}
+.Netflix_Account_dropdown > ul > li
+{
+    padding: 15px;
+    cursor: pointer;
+}
+.Netflix_Account_dropdown > ul > li > i
+{
+    margin-right: 8px;
+}
+.Netflix_Account_dropdown > ul > li:hover
+{
+    text-decoration: underline;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .navigations
+    {
+        display: none;
+    }
+  }

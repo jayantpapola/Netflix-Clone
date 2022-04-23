@@ -25,7 +25,7 @@ const Collapse = (props) => {
     <div className='Collapse'>
         <div className='collapse_btn'>
             <p className='question'>{props.Question}</p>
-            <p onClick={openCollapse}><i class={`fa-light fa-plus ${rotate}`}></i></p>
+            <p onClick={openCollapse}><i className={`fa-light fa-plus ${rotate}`}></i></p>
         </div>
         
         <div className={`collapse_dropdown ${state}`}>

@@ -1,0 +1,11 @@
+.Netflix
+{
+    background-color: #111;
+    color: white;
+}
+.Movies
+{
+    z-index: 999;
+    margin-top: -50px;
+    position: absolute;
+}

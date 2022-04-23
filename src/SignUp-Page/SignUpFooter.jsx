@@ -63,9 +63,9 @@ const SignUpFooter = () => {
         </div>
 
         <button className='lang_btn' onClick={show}>
-        <i class="fa-solid fa-globe"></i>
+        <i className="fa-solid fa-globe"></i>
         {language}
-        <i class="fa-solid fa-caret-down"></i>
+        <i className="fa-solid fa-caret-down"></i>
         <div className={`lang_dropdown down ${langDropDown}`}>
                     <ul>
                         <li onClick={change_lang}> English</li>

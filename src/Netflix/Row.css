@@ -1,0 +1,116 @@
+.Row 
+{
+    padding:20px 0;
+}
+.Row > h3
+{
+    padding-inline: 40px;
+}
+.Row_container
+{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 15px 40px;
+}
+.Row_container::-webkit-scrollbar
+{
+    display: none;
+    height: 4px;
+    background-color: black;
+}
+.Row_container::-webkit-scrollbar-thumb
+{
+    height: 4px;
+    border-radius: 100px;
+    background-color: red;
+}
+.Row_container> img
+{
+    height: 140px;
+    object-fit: contain;
+    width: 100%;
+    margin: 4px;
+    transition: .3s;
+    border-radius: .2vw;
+}
+.Row_container > img:hover
+{
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0 0 0 1px transparent,
+    0 0 0 3px white;
+}
+
+/*HOVER*/
+
+
+
+
+
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~TOP ROW CSS~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.poster_row
+{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 15px 40px;
+}
+.poster_row::-webkit-scrollbar
+{
+    height: 2px;
+    background-color: black;
+}
+.poster_row::-webkit-scrollbar-thumb
+{
+    height: 2px;
+    border-radius: 100px;
+    background-color: red;
+}
+.poster_row > img
+{
+    height: 250px;
+    object-fit: contain;
+    width: 100%;
+    margin-right: 4px;
+    transition: .3s;
+}
+.poster_row > img:hover
+{
+    transform: scale(1.1);
+    cursor: pointer;
+    
+    box-shadow: 0 0 0 1px transparent,
+    0 0 0 3px white;
+
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .Row_container> img
+    {
+        height: 120px;
+        object-fit: contain;
+        width: 100%;
+        margin: 4px;
+        transition: .3s;
+        border-radius: .2vw;
+    }
+    .poster_row > img
+    {
+        height: 220px;
+        object-fit: contain;
+        width: 100%;
+        margin-right: 4px;
+        transition: .3s;
+    }
+    
+
+}

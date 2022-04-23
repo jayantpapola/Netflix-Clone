@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import SignUp from './SignUp-Page/SignUp';
 import CreateAccount from './Account-Creation/CreateAccount';
+import Netflix from './Netflix/Netflix';
 
 function App() {
   return (
@@ -17,9 +18,8 @@ function App() {
       <div className="App">
       <Routes>
         <Route path='/' element={<SignUp/>}/>
-      </Routes>
-      <Routes>
         <Route path='/Signing_Up' element={<CreateAccount/>}/>
+        <Route path='/Netflix.in' element={<Netflix/>}/>
       </Routes>
           
       </div>

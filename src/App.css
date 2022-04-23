@@ -8,5 +8,8 @@ body::-webkit-scrollbar-thumb
     background-color: rgb(229, 9, 20);
 }
 
-
+body
+{
+    background-color: #111;
+}
 /* c67b28f7d09258b49fa6ddf2f5eccb61 */

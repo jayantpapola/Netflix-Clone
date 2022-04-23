@@ -42,7 +42,7 @@ const Questions = () => {
         <div className='input_field2'>
             <input type="email" name='email' placeholder='Email address' value={inputValue} onChange={(e)=>setInputValue(e.target.value)}/>
             <Link  to='/Signing_Up'>
-              <button>Start<i class="fa-solid fa-angle-right"></i></button>
+              <button>Start<i className="fa-solid fa-angle-right"></i></button>
             </Link>
         </div>
         
