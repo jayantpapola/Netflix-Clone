@@ -1,11 +1,23 @@
 import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 import './Modal.css'
-import ModalReducer from '../Reducerrrrrrrrrrr/ModalReducer'
+import YouTube from 'react-youtube'
+import movieTrailer from 'movie-trailer'
 
 const Modal = () => {
 
-    const base_img_URL ="https://image.tmdb.org/t/p/original/"
+    // const base_img_URL ="https://image.tmdb.org/t/p/original/"
+
+    const [trailerUrl, setTrailerUrl] = useState('')
+    
+    const opts = {
+                minHeight : '350px',
+                width : '100%',
+                playerVars : {
+                    autoplay : 1,
+                }
+    }
+
 
     const [ modal, setModal] = useState('none')
     const [ like, setLike] = useState({})
@@ -29,15 +41,45 @@ const Modal = () => {
     setLike({})
 },[state])
 
+
+//  const movieRender =  async (url)=>{
+//     movieTrailer(`${state.Name}` || "")
+//     try{
+//         const urlParams = await URLSearchParams(new URL(url).search)
+//         setTrailerUrl(urlParams.get('v'))
+//     }
+//     catch(err){
+//         console.log(err)
+//     }
+
+//  }
+
     useEffect(()=>{
 
         if(state.status ==='closed')
         {
+            //Opening Modal
             setModal('')
-            
+            //Movie Trailer Function
+            if(trailerUrl)
+            {
+                setTrailerUrl('')
+            }
+            else
+            {
+                 movieTrailer(`${state.Name}` || "")
+                .then((url)=>{
+                    console.log(url)
+                    const urlParams =  new URLSearchParams(new URL(url).search)
+                    setTrailerUrl(urlParams.get('v'))
+                })
+                .catch((error)=>console.log(error))
+                // movieRender()
+            }
         }
 
     },[state])
+
     useEffect(()=>{
 
         if(state.rating >= 7)
@@ -64,6 +106,7 @@ const Modal = () => {
     function shutModal()
     {
         setModal('none')
+        setTrailerUrl('')
     }
     
     
@@ -71,10 +114,11 @@ const Modal = () => {
 
   return (
     <div className={`Modal ${modal}`}>
-        <div className="modal_shut_btn" onClick={shutModal}><i class="fa-solid fa-xmark"></i></div>
+        <div className="modal_shut_btn" onClick={shutModal}><i className="fa-solid fa-xmark"></i></div>
         <div className="modal_content">
             <div className='modal_img'>
-                <img src={`${base_img_URL}${state.Image}`}/>
+                {/* <img src={`${base_img_URL}${state.Image}`}/> */}
+                {trailerUrl && <YouTube videoId={trailerUrl} opts={opts}/>}
             </div>
 
             <div className="modal_description">
@@ -92,7 +136,7 @@ const Modal = () => {
 
             <div className="modal_footer">
                 <div className="modal_rating" style={rating}>
-                        {state.rating}<i class="fa-solid fa-star"></i>
+                        {state.rating}<i className="fa-solid fa-star"></i>
                 </div>
                 <div className="modals_btn">
                     <button><i className="fa-solid fa-play"></i></button>

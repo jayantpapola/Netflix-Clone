@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import './NetflixNavbar.css'
 
 const NetflixNavbar = () => {
@@ -87,7 +88,9 @@ const NetflixNavbar = () => {
                 <li id='sec1'><i className="fa-solid fa-pen"></i> Manage Profiles</li>
                 <li><i className="fa-solid fa-user"></i> Account</li>
                 <li id='sec2'><i className="fa-regular fa-circle-question"></i> Help Center</li>
-                <li id='sec3'>Sign Out of Netflix</li>
+               <Link style={{color:'white',textDecoration:'none'}} to="/Signing_Up">
+               <li id='sec3'>Sign Out of Netflix</li>
+               </Link>
             </ul>
         </div>
         </div>

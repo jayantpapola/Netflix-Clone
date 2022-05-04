@@ -126,6 +126,12 @@
 {
     text-align: center;
     font-size: 12px;
+    padding: 15px;
+    cursor: pointer;
+}
+#sec3:hover
+{
+    text-decoration: underline;
 }
 .Netflix_Account_dropdown > ul > li
 {

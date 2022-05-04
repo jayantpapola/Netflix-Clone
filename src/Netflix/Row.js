@@ -38,7 +38,7 @@ const Row = ({title, fetchURL, LargeRow }) => {
                     ()=>dispatch(
                     modalOpen({
                         Image:e.backdrop_path,
-                        Name:e.title || e.name,
+                        Name: e.title || e.name || e.original_name ,
                         desc:e.overview,
                         rating:e.vote_average,
                         status:'closed'
@@ -48,7 +48,6 @@ const Row = ({title, fetchURL, LargeRow }) => {
             ))}
         </div>
     </div>
-        
   )
 }
 
